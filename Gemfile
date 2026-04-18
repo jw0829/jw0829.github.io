@@ -1,13 +1,20 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
+
+gem "jekyll", "3.9.5"
+gem "webrick"
 
 group :jekyll_plugins do
-  gem 'jekyll'
-  gem 'jekyll-feed'
-  gem 'jekyll-sitemap'
-  gem 'jekyll-redirect-from'
-  gem 'jemoji'
-  gem 'webrick', '~> 1.8'
+  gem "jekyll-feed"
+  gem "jekyll-sitemap"
+  gem "jekyll-seo-tag"
 end
 
-gem 'github-pages'
-gem 'connection_pool', '2.5.0'
+gem "jekyll-gist", "~> 1.5"
+
+gem "jekyll-paginate", "~> 1.1"
+gem "jekyll-include-cache", "~> 0.2.1"
+
+gem "jekyll-redirect-from", "~> 0.16.0"
+gem "jemoji", "~> 0.13.0"
+
+gem "kramdown-parser-gfm", "~> 1.1"
