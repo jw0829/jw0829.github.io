@@ -27,7 +27,6 @@
     "layout/notices",
     "layout/masthead",
     "layout/navigation",
-    "layout/footer",
     "syntax",
 
     "layout/forms",
@@ -39,10 +38,17 @@
 
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
+    "vendor-font-awesome/brands"
 ;
 
-/* Hide footer completely */
-.page__footer {
+/* Hide footer and any leftover footer wrapper/bar */
+.page__footer,
+.page__footer footer,
+footer.page__footer {
   display: none !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
 }
