@@ -41,14 +41,21 @@
     "vendor/font-awesome/brands"
 ;
 
-/* Hide footer and any leftover footer wrapper/bar */
+/* Hide footer and remove leftover bottom space */
 .page__footer,
 .page__footer footer,
-footer.page__footer {
+footer.page__footer,
+.page__footer-follow,
+.page__footer-copyright {
   display: none !important;
   height: 0 !important;
   min-height: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
   border: 0 !important;
+  background: transparent !important;
+}
+
+body {
+  padding-bottom: 0 !important;
 }
